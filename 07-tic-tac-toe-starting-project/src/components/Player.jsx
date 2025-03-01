@@ -17,7 +17,7 @@ export default function Player(props) {
 
     
     return (
-        <li>
+        <li className={props.activePlayer === props.symbol && 'active'}>
             {isEditing ? (
                 <input type="text" value={playername} required onChange={handleNameChange}/>
             ) : (
